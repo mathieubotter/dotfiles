@@ -1,0 +1,22 @@
+cask_args appdir: '/Applications'
+
+tap 'caskroom/cask'
+tap 'homebrew/bundle'
+
+brew 'dnsmasq'
+brew 'ghi'
+brew 'git'
+brew 'go'
+brew 'imagemagick'
+brew 'mongodb'
+brew 'mysql'
+brew 'node'
+brew 'rbenv'
+brew 'unrar'
+
+cask 'aerial'
+cask 'dash'
+cask 'dropbox'
+cask 'imageoptim'
+cask 'virtualbox'
+cask 'vlc'
