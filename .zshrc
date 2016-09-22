@@ -57,7 +57,7 @@ source $ZSH/oh-my-zsh.sh
 unsetopt inc_append_history
 unsetopt share_history
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.composer/vendor/bin"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.composer/vendor/bin:/usr/local/share/dotnet"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -79,6 +79,9 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/
 #for file in ~/zsh/*.zsh; do
 #  source "$file"
 #done
+
+# Homebrew settings
+HOMEBREW_NO_ANALYTICS=1
 
 # Aliases
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
@@ -136,5 +139,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 export PATH="$HOME/.rbenv/bin:$PATH"
 
 # Go
-GOPATH="${CODE_DIR}/Go"
-export PATH="$GOPATH/bin:$PATH"
+export GOPATH="${CODE_DIR}/Go"
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin
