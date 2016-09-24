@@ -80,9 +80,6 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/
 #  source "$file"
 #done
 
-# Homebrew settings
-HOMEBREW_NO_ANALYTICS=1
-
 # Aliases
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -92,7 +89,6 @@ HOMEBREW_NO_ANALYTICS=1
 ## Code Editors
 CURRENT_EDITOR="atom"
 alias atom="$CURRENT_EDITOR ./"
-alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 
 # Mac OS X
 alias o='open .'
@@ -143,3 +139,6 @@ export GOPATH="${CODE_DIR}/Go"
 export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
+
+# Homebrew settings
+HOMEBREW_NO_ANALYTICS=1
